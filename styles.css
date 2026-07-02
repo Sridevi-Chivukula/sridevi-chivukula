@@ -201,55 +201,65 @@ h2 {
 /* Key Achievements Section */
 .achievements-section {
     background-color: #f8f9fa;
-    padding: 60px 20px;
-    margin: 40px 0;
+    padding: 30px 20px;
 }
 
 .section-title {
     text-align: center;
     color: #1e5a8e;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-bottom: 25px;
     border-bottom: 3px solid #ff9800;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
-.achievements-list {
-    max-width: 900px;
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .achievement-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 25px;
-    padding: 20px;
+    padding: 12px 15px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.achievement-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .checkmark {
     color: #4CAF50;
-    font-size: 1.5rem;
-    margin-right: 15px;
+    font-size: 1.3rem;
+    margin-right: 12px;
     flex-shrink: 0;
 }
 
 .achievement-item p {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}    
+
+.achievements-section {
+    padding: 30px 20px;
+    background-color: #f8f9fa;
+}
+
+.achievement-item {
+    padding: 12px 15px;
+    margin-bottom: 12px;
+}
 
 /* Section Styles */
 .section-title {
