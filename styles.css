@@ -198,6 +198,10 @@ h2 {
     margin: 15px 0 10px 0 !important;
 }
 
+/* Add this new rule for hero text */
+.hero p, .hero-subtitle, .hero-highlights {
+    font-weight: 400;  /* Normal weight */
+}
 /* Key Achievements Section */
 .achievements-section {
     background-color: #f8f9fa;
@@ -234,7 +238,7 @@ h2 {
 .checkmark {
     color: #4CAF50;
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 600;  /* Semi-bold instead of bold */
     margin-right: 12px;
     flex-shrink: 0;
 }
@@ -242,7 +246,7 @@ h2 {
 .achievement-item p {
     margin: 0;
     font-size: 0.95rem;
-        font-weight: bold;
+        font-weight: 400;  /* Normal weight */
     color: #333;
     line-height: 1.5;
 }
