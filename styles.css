@@ -234,6 +234,7 @@ h2 {
 .checkmark {
     color: #4CAF50;
     font-size: 1.3rem;
+    font-weight: bold;
     margin-right: 12px;
     flex-shrink: 0;
 }
@@ -241,6 +242,7 @@ h2 {
 .achievement-item p {
     margin: 0;
     font-size: 0.95rem;
+        font-weight: bold;
     color: #333;
     line-height: 1.5;
 }
