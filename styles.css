@@ -171,6 +171,32 @@ h2.subtitle {
         grid-template-columns: 1fr;
     }
 }
+/* Compact mode - reduces all vertical spacing */
+* {
+    margin-top: 0;
+}
+
+header {
+    padding: 20px !important;
+}
+
+section {
+    padding: 25px 20px !important;
+    margin: 15px 0 !important;
+}
+
+.stat-box, .project-card {
+    padding: 15px !important;
+    margin: 8px !important;
+}
+
+h1 {
+    margin: 10px 0 !important;
+}
+
+h2 {
+    margin: 15px 0 10px 0 !important;
+}
 
 /* Key Achievements Section */
 .achievements-section {
