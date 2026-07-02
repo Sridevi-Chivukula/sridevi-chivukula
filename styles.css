@@ -134,6 +134,44 @@ body {
     font-size: 16px;
 }
 
+/* Header section - reduce top/bottom padding */
+header, .hero-section {
+    padding: 30px 20px;  /* Reduce from likely 60-80px */
+}
+
+/* Profile photo area */
+.profile-container {
+    margin: 20px auto;  /* Reduce from likely 40-60px */
+}
+
+/* Title and subtitle spacing */
+h1 {
+    margin: 15px 0;  /* Reduce from likely 30px */
+}
+
+h2.subtitle {
+    margin: 10px 0 20px 0;  /* Reduce spacing */
+}
+
+/* Tagline/description */
+.tagline {
+    margin: 15px 0;  /* Reduce from likely 30-40px */
+}
+
+.achievements-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .achievements-list {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Key Achievements Section */
 .achievements-section {
     background-color: #f8f9fa;
